@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tag1: MyString
+  tag2: MyString
+  tag3: MyString
+  tag4: MyString
+  tag5: MyString
+  tag6: MyString
+  tag7: MyString
+  tag8: MyString
+  tag9: MyString
+  tag10: MyString
+  tag11: MyString
+  tag12: MyString
+  tag13: MyString
+  tag14: MyString
+  tag15: MyString
+  status: MyString
+  user: one
+
+two:
+  tag1: MyString
+  tag2: MyString
+  tag3: MyString
+  tag4: MyString
+  tag5: MyString
+  tag6: MyString
+  tag7: MyString
+  tag8: MyString
+  tag9: MyString
+  tag10: MyString
+  tag11: MyString
+  tag12: MyString
+  tag13: MyString
+  tag14: MyString
+  tag15: MyString
+  status: MyString
+  user: two

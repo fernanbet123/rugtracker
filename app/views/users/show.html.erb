@@ -1,0 +1,28 @@
+<h1> Registration done</h1>
+
+<br>
+
+<div style="overflow-y: auto; height: 465px;float: left; border-radius: 10px; width: 490px;
+		border: 3px solid black;
+		margin: auto;">
+<table style="float: left; width: 497px; margin: 0px;
+		border: 0px;
+		margin: auto;">
+<tr>
+	<td><%= @user.firstName %>
+<td><%= @user.lastName %></td>
+<td><%= @user.phone %></td>
+<td><%= @user.email %></td>
+</tr>
+<tr>
+		<td colspan="2" style="text-align: center;">Tag Number</td>
+		<td colspan="2" style="text-align: center;">Status</td>
+	</tr>
+<%= render @user.items %>
+</table>
+</div>
+<%= render @user.products %>
+<%= render 'products/quantity' %>
+<% if @user.products.count > 0 %>
+<%= render 'items/form' %>
+<% end %>

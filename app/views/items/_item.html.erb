@@ -1,0 +1,11 @@
+
+	<tr>
+		<td colspan="2"><%= item.tag %></td>
+		<td colspan="2"><%= item.status %></td>
+		<td><%= link_to 'show', [item.user, item] %></td>
+		<td><%= link_to 'Delete', [item.user, item],
+		method: :delete,
+		data: { confirm: 'are you sure?' } %></td>
+
+		<td><%= link_to 'edit', edit_user_item_path(@user) %></td>
+	</tr>

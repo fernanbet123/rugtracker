@@ -1,0 +1,40 @@
+
+<style type="text/css">
+	td {
+		vertical-align: top;
+	}
+</style>
+<table class="forms" style="margin: 0px;">
+<%= form_tag createmulti_user_items_path(@user), method: :post do %>
+
+<th colspan="2" id="th_new_item" class="th_header">new item</th>
+<% if @quantity %>
+<% @itemArray.each do %>
+	
+		<tr>
+		<td><%= label_tag "Tag Number" %></td>
+
+		<td><%= text_field_tag "item[tag]" %></td>
+		</tr>
+	
+	<tr>
+	<tr>
+	<p>
+  	</p>
+ </tr>
+ 
+  <%  end %>
+  <%  end %>
+  <tr>
+		<td rowspan="3">Status</td>
+		<td><%= radio_button_tag "item[status]", 'waiting for pick up' %> waiting for pick up</td></tr>
+		<tr>
+		<td><%= radio_button_tag "item[status]", 'recieved' %> Recieved</td></tr>
+		<td><%= radio_button_tag "item[status]", 'custumer wiil pick it up' %> custumer wiil pick it up</td></tr>
+  <tr>
+
+  	<td colspan="2" style="text-align: center;"><%= submit_tag "Create items" %></td>
+</tr>
+<% end %>
+
+ </table>

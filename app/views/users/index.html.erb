@@ -1,0 +1,28 @@
+<style type="text/css">
+	
+	.back {
+		display: none;
+	}
+</style>
+
+
+<h1>all users</h1>
+
+<section>
+<%= link_to 'new costumer', new_user_path %>
+<table>
+<% @user.each do |u| %>
+
+<tr>
+<th style="text-align: left;"><%= u.firstName %></th>
+<td><%= u.lastName %></td>
+<td><%= u.phoneNum %></td>
+<td><%= link_to 'show', user_path(u) %></td>
+<td><%= link_to 'edit', edit_user_path(u) %></td>
+<td><%= link_to 'Delete', user_path(u),
+		method: :delete,
+		data: { confirm: 'are you sure?' } %></td>
+</tr>
+<% end %>
+</table>
+</section>
